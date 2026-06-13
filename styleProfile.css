@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.profile-card{
+    width:90%;
+    margin:30px auto;
+    background:#DDE7E1;
+    border:1px solid #006D6F;
+    border-radius:15px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+.data h1{
+    color: #045B5D;
+}
+
+.avatar{
+    width:150px;
+}
+
+.badge{
+    padding:10px 20px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.verified{
+    background:#2B9D9F;
+}
+
+.platinum{
+    background:gray;
+}
+
+.content{
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.left,.right{
+    width:45%;
+}
+
+.box{
+    border:2px solid #006D6F;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:25px;
+    margin-top: 20px !important;
+}
+
+.contact{
+    background:#007A7D;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.activity{
+    background:#007A7D;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#006D6F;
+    color:white;
+    border:none;
+}
+
+.logout{
+    width:90%;
+    margin:30px auto;
+    display:block;
+    padding:25px;
+    font-size:25px;
+    border-radius:15px;
+}
+
+button{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.box p{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - SeatUp</title>
+    <link rel="stylesheet" href="styleDefault.css">
+    <link rel="stylesheet" href="stylePay.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="back-nav">
+        <button onclick="window.location.href='seat.html'">❮</button>
+        <span>PAYMENT</span>
+    </div>
+
+    <div class="payment-container">
+        
+        <div class="payment-main">
+            
+            <div class="pay-card route-card">
+                <div class="route-header">
+                    <h3>Argo Cheribon</h3>
+                    <span>3E - Eksekutif</span>
+                </div>
+                <div class="route-detail">
+                    <div>
+                        <h4>Stasiun Gambir</h4>
+                        <p>Jakarta</p>
+                        <small>Tanggal</small>
+                    </div>
+                    <div class="arrow">──────→</div>
+                    <div>
+                        <h4>Stasiun Bekasi</h4>
+                        <p>Bekasi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pay-card voucher-card">
+                <input type="text" placeholder="VOUCHER" readonly value="Voucher pengguna baru">
+            </div>
+
+            <div class="pay-card price-details">
+                <div class="price-row"><span>Harga tiket</span><span>Rp 125.000</span></div>
+                <div class="price-row"><span>Biaya layanan</span><span>Rp 7.500</span></div>
+                <div class="price-row"><span>Biaya Keamanan</span><span>Rp 2.500</span></div>
+                <div class="price-row"><span>Pajak 11%</span><span>Rp 13.750</span></div>
+                <div class="price-row discount"><span>Voucher pengguna baru</span><span>- Rp 15.000</span></div>
+                <div class="price-row total-row">
+                    <span>total</span>
+                    <span class="total-price">IDR 133.750</span>
+                </div>
+            </div>
+
+            <div class="pay-card method-card">
+                <label class="method-option">
+                    <span>E-wallet</span>
+                    <input type="radio" name="payment-method" checked>
+                </label>
+                <label class="method-option">
+                    <span>Virtual Account</span>
+                    <input type="radio" name="payment-method">
+                </label>
+                <label class="method-option">
+                    <span>Kartu Kredit</span>
+                    <input type="radio" name="payment-method">
+                </label>
+                <label class="method-option">
+                    <span>Mitra/Agen</span>
+                    <input type="radio" name="payment-method">
+                </label>
+                <label class="method-option">
+                    <span>QRIS</span>
+                    <input type="radio" name="payment-method">
+                </label>
+            </div>
+
+            <div class="action-row">
+                <form action="done.html" method="get">
+                    <button  type="submit" class="btn-pay">BAYAR SEKARANG</button>
+                </form>
+                <div class="total-display">IDR 133.750</div>
+            </div>
+        </div>
+
+        <div class="payment-sidebar">
+            <div class="timer-card">
+                <h4>BATAS WAKTU PEMBAYARAN</h4>
+                <div class="countdown" id="timer">0 : 59 : 59</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="default.js"></script>
+
+</body>
+</html>

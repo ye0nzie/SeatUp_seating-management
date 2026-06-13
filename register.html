@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styleRegister.css">
+    <link rel="stylesheet" href="styleDefault.css">
+</head>
+<body>
+    <div class="register">
+
+
+
+        <div class ="regist">
+            <form id="registerForm" class="register-box" action="login.html">
+               
+                <div class="input-group">
+                    <label>Nama</label>
+                    <input type="text" placeholder="Masukkan nama anda sesuai KTP" id ="nama">
+                </div>
+    
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Masukkan email anda" id="email">
+                </div>
+    
+                <div class="input-group">
+                    <label>Gender</label>
+                   
+                    <div class="radio-group">
+                        <div class = "radio-item">
+                            <input type="radio" name="gender" id="perempuan" value="Perempuan"> 
+                            <label for="perempuan">Perempuan</label> 
+                        </div>
+    
+                        <div class = "radio-item">
+                            <input type="radio" name="gender" id="laki-laki" value="Laki-laki"> 
+                            <label for="laki-laki">Laki Laki</label> 
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="input-group">
+                    <label>Kata sandi</label>
+                    <input type="text" placeholder="Masukkan kata sandi anda" id ="pass">
+                </div>
+    
+               <p class="ktp">
+                    Verifikasi Foto KTP
+               </p>
+               <div class="ktp-box"></div>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+                <div class="train-wrap">
+            <img class="train" src="Source/TRAIN.png" alt="kereta">
+        </div>
+
+        <div class="ground">
+            <div class="pillar"></div>
+            <div class="grass-left"></div>
+            <div class="grass-right"></div>
+        </div>
+
+        <script src="register.js"></script>
+
+    </div>
+</body>
+</html>
